@@ -1,0 +1,25 @@
+.new-book-entry-ul {
+  display: grid;
+  list-style: none;
+  padding: 2vw;
+  gap: 10px;
+}
+
+.new-book-entry {
+  border: 1px solid #000;
+  min-height: 5vw;
+}
+
+@media (min-width: 760px) {
+  .new-book-entry-ul {
+    display: grid;
+    list-style: none;
+    padding: 2vw;
+    gap: 10px;
+  }
+
+  .new-book-entry {
+    border: 1px solid #000;
+    min-height: 5vw;
+  }
+}
