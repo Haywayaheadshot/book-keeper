@@ -6,33 +6,9 @@
   border: 2px solid grey;
 }
 
-.new-book-entry-ul {
-  display: grid;
-  list-style: none;
-  padding: 2vw;
-  gap: 10px;
-}
-
-.new-book-entry {
-  border: 1px solid #000;
-  min-height: 5vw;
-}
-
 @media (min-width: 760px) {
   .received-api-books {
     border: 2px solid grey;
     border-bottom: none;
-  }
-
-  .new-book-entry-ul {
-    display: grid;
-    list-style: none;
-    padding: 2vw;
-    gap: 10px;
-  }
-
-  .new-book-entry {
-    border: 1px solid #000;
-    min-height: 5vw;
   }
 }
