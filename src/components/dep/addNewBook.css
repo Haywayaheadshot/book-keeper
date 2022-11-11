@@ -10,6 +10,14 @@
   place-self: center;
 }
 
+.books-authors-inputs-div {
+  display: grid;
+}
+
+.books-authors-inputs-div h2 {
+  place-self: center;
+}
+
 @media (min-width: 760px) {
   .books-authors-inputs {
     border-top: 2px solid grey;
