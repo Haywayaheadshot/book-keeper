@@ -35,6 +35,7 @@ function Navigation() {
             toggled={isOpen}
             toggle={isClosed}
             duration={0.8}
+            label="Show menu"
           />
         </div>
         {isOpen
