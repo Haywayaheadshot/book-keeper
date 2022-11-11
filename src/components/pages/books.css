@@ -8,7 +8,11 @@
 
 @media (min-width: 760px) {
   .received-api-books {
-    border: 2px solid grey;
-    border-bottom: none;
+    border: none;
+  }
+
+  .books-container {
+    padding: 2vh 9vw;
+    margin-top: 0;
   }
 }
