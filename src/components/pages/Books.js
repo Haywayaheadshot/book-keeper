@@ -1,4 +1,5 @@
 import React from 'react';
+import AddNewBook from '../dep/AddNewBook';
 import './books.css';
 
 function Books() {
@@ -12,17 +13,7 @@ function Books() {
           <li className="new-book-entry">New Book</li>
         </ul>
       </section>
-      <section className="books-authors-inputs">
-        <input
-          placeholder="Book Title"
-          type="text"
-        />
-        <input
-          placeholder="Author"
-          type="text"
-        />
-        <button className="add-books" type="button">Add Book</button>
-      </section>
+      <AddNewBook />
     </div>
   );
 }
