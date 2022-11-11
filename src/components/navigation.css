@@ -49,8 +49,9 @@ a:active {
   min-height: 80vh;
   padding: 3vh;
   gap: 20px;
-  right: 2px;
+  right: 0;
   list-style: none;
+  border-radius: 12px;
 }
 
 .pop-up-li {
