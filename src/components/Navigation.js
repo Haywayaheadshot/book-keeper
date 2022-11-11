@@ -41,12 +41,12 @@ function Navigation() {
           ? (
             <ul className="nav-popUp-ul">
               <li>
-                <NavLink onClick={<Hamburger toggle={isClosed} />} className="pop-up-li" to="/books">
+                <NavLink className="pop-up-li" to="/books"  onClick={<Hamburger toggle={isClosed} />} >
                   BOOKS
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={<Hamburger toggle={isClosed} />} className="pop-up-li" to="/categories">
+                <NavLink className="pop-up-li" to="/categories"  onClick={<Hamburger toggle={isClosed} />} >
                   CATEGORIES
                 </NavLink>
               </li>
