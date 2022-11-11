@@ -11,10 +11,9 @@ function AddNewBook() {
             placeholder="Book Title"
             type="text"
           />
-          <input
-            placeholder="Author"
-            type="text"
-          />
+          <select htmlFor="Category">
+            Category
+          </select>
           <button className="add-books" type="button">Add Book</button>
         </form>
       </section>
