@@ -13,21 +13,9 @@
   gap: 10px;
 }
 
-.books-authors-inputs {
-  display: grid;
-  gap: 20px;
-  padding: 3vh 5vw;
-  margin-top: 3vh;
-}
-
 .new-book-entry {
   border: 1px solid #000;
   min-height: 5vw;
-}
-
-.add-books {
-  max-width: 15vw;
-  place-self: center;
 }
 
 @media (min-width: 760px) {
@@ -46,14 +34,5 @@
   .new-book-entry {
     border: 1px solid #000;
     min-height: 5vw;
-  }
-
-  .books-authors-inputs {
-    border-top: 2px solid grey;
-    display: grid;
-    grid-template-columns: 2fr 2fr 0.5fr;
-    gap: 20px;
-    padding: 8vh 5vw;
-    margin-top: 3vh;
   }
 }
