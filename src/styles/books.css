@@ -1,0 +1,18 @@
+.books-container {
+  margin-top: 3vh;
+}
+
+.received-api-books {
+  border: 2px solid grey;
+}
+
+@media (min-width: 760px) {
+  .received-api-books {
+    border: none;
+  }
+
+  .books-container {
+    padding: 2vh 9vw;
+    margin-top: 0;
+  }
+}

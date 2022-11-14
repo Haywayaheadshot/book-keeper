@@ -1,0 +1,35 @@
+.main-container {
+  display: grid;
+  place-content: center;
+  min-height: 60vh;
+}
+
+.main-container h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.main-container h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+@media (min-width: 760px) {
+  .main-container {
+    display: grid;
+    place-content: center;
+    min-height: 60vh;
+  }
+
+  .main-container h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .main-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+  }
+}
