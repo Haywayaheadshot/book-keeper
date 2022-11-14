@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
-import './navigation.css';
+import '../styles/navigation.css';
 
 function Navigation() {
   const [isOpen, isClosed] = useState(false);
@@ -35,18 +35,19 @@ function Navigation() {
             toggled={isOpen}
             toggle={isClosed}
             duration={0.8}
+            label="Show menu"
           />
         </div>
         {isOpen
           ? (
             <ul className="nav-popUp-ul">
               <li>
-                <NavLink onClick={<Hamburger toggle={isClosed} />} className="pop-up-li" to="/books">
+                <NavLink onClick={() => isClosed(false)} className="pop-up-li" to="/books">
                   BOOKS
                 </NavLink>
               </li>
               <li>
-                <NavLink onClick={<Hamburger toggle={isClosed} />} className="pop-up-li" to="/categories">
+                <NavLink onClick={() => isClosed(false)} className="pop-up-li" to="/categories">
                   CATEGORIES
                 </NavLink>
               </li>

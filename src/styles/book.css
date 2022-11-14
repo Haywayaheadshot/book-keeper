@@ -2,24 +2,24 @@
   display: grid;
   list-style: none;
   padding: 2vw;
-  gap: 10px;
 }
 
 .new-book-entry {
   border: 1px solid #000;
-  min-height: 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3vh 5vw;
 }
 
 @media (min-width: 760px) {
   .new-book-entry-ul {
     display: grid;
     list-style: none;
-    padding: 2vw;
-    gap: 10px;
+    padding: 0 2vw;
   }
 
   .new-book-entry {
     border: 1px solid #000;
-    min-height: 5vw;
+    padding: 3vh 5vw;
   }
 }
