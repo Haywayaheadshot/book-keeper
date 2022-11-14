@@ -1,5 +1,5 @@
 import React from 'react';
-import './addNewBook.css';
+import '../../styles/addNewBook.css';
 
 function AddNewBook() {
   return (

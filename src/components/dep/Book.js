@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './book.css';
+import '../../styles/book.css';
 
 const Book = ({ title, author }) => (
   <ul className="new-book-entry-ul">
