@@ -14,17 +14,11 @@ function AddNewBook() {
   const progress = Math.floor(Math.random() * 100);
   const currentStatus = Math.floor(Math.random() * 10);
 
-  const onChangeTitleHandler = (event) => {
-    setTitle(event.target.value);
-  };
+  const onChangeTitleHandler = ({ target }) => setTitle(target.value);
 
-  const onChangeAuthorHandler = (event) => {
-    setAuthor(event.target.value);
-  };
+  const onChangeAuthorHandler = ({ target }) => setAuthor(target.value);
 
-  const onChangeGenreHandler = (event) => {
-    setGenre(event.target.value);
-  };
+  const onChangeGenreHandler = ({ target }) => setGenre(target.value);
 
   const onClickInput = () => {
     dispatch(addBook({
@@ -46,6 +40,7 @@ function AddNewBook() {
             className="user-inputs"
             value={title}
             onChange={onChangeTitleHandler}
+            required
           />
           <input
             placeholder="Author"
@@ -53,6 +48,7 @@ function AddNewBook() {
             className="user-inputs"
             value={author}
             onChange={onChangeAuthorHandler}
+            required
           />
           <input
             placeholder="Genre"
@@ -60,6 +56,7 @@ function AddNewBook() {
             type="text"
             value={genre}
             onChange={onChangeGenreHandler}
+            required
           />
           <button className="add-books" type="button" onClick={onClickInput}>Add Book</button>
         </form>
