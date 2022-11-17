@@ -5,6 +5,14 @@
   margin-top: 3vh;
 }
 
+.error-message {
+  background-color: red;
+  display: none;
+  margin: 0;
+  padding: 1vh 2vw;
+  color: #fff;
+}
+
 .add-books {
   max-width: 15vw;
   place-self: center;
