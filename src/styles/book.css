@@ -7,8 +7,51 @@
 .new-book-entry {
   border: 1px solid #000;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr;
   padding: 3vh 5vw;
+  gap: 5px;
+  border-radius: 12px;
+}
+
+.comment-edit-remove-btn {
+  border: none;
+  background: none;
+  border-right: 1px solid #e8e8e8;
+  color: #4386bf;
+}
+
+.genre-text {
+  font-size: 0.857rem;
+  color: #121212;
+  font-weight: bold;
+}
+
+.author-text {
+  color: #4386bf;
+  font-size: 0.857rem;
+}
+
+.progress-percentage-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+}
+
+.progress-percentage {
+  margin: 2vh 0 0 0;
+  padding: 0;
+}
+
+.progress-percentage-text {
+  margin: 0;
+  padding: 0;
+}
+
+.current-chapter-section {
+  padding: 0 0 6vh 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (min-width: 760px) {
@@ -21,5 +64,22 @@
   .new-book-entry {
     border: 1px solid #000;
     padding: 3vh 5vw;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+
+  .current-chapter-section {
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .current-chap-text {
+    margin: 2vh 0 0 0;
+    padding: 0;
+  }
+
+  .progress-percentage-div {
+    border-right: 1px solid #e8e8e8;
   }
 }
