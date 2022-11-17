@@ -5,7 +5,7 @@ const ADD_BOOK = 'book-keeper/src/redux/books/addBook';
 const REMOVE_BOOK = 'book-keeper/src/redux/books/removeBook';
 const GET_BOOKS = 'book-keeper/src/redux/books/getBooks';
 
-const defaultState = [];
+const initialState = [];
 
 const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/DFUhh4yDST6avyyeS4xx/books/';
 
@@ -33,7 +33,7 @@ export const getBooks = createAsyncThunk(
       id,
       title: books[id][0].title,
       author: books[id][0].author,
-      genre: books[id][0].category,
+      category: books[id][0].category,
     }));
     return data;
   }),
@@ -41,7 +41,7 @@ export const getBooks = createAsyncThunk(
 
 const booksSlice = createSlice({
   name: 'books',
-  defaultState,
+  initialState,
   extraReducers: (builder) => {
     builder.addCase(getBooks.fulfilled, (_, action) => action.payload);
     builder.addCase(getBooks.rejected, (state) => {
