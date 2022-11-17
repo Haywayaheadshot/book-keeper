@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../../redux/books/Books';
+import { addBook, getBooks } from '../../redux/books/Books';
 import '../../styles/addNewBook.css';
 
 function AddNewBook() {
@@ -29,7 +29,8 @@ function AddNewBook() {
       }));
       setAuthor('');
       setTitle('');
-      setGenre('"Genre Not Specified"');
+      setGenre('');
+      setTimeout(() => dispatch(getBooks()), 100);
     } else {
       errorMessage.style.display = 'block';
     }
@@ -64,8 +65,12 @@ function AddNewBook() {
             <option value="Romance">Romance</option>
             <option value="Comedy">Comedy</option>
             <option value="Thriller">Thriller</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Real Life">Real Life</option>
           </select>
-          <button className="add-books" type="button" onClick={onClickInput}>Add Book</button>
+          <button className="add-books" type="button" onClick={onClickInput}>
+            Add Book
+          </button>
         </form>
       </section>
     </div>
