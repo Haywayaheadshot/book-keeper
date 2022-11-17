@@ -29,11 +29,15 @@ export const removeBook = createAsyncThunk(REMOVE_BOOK, (id) => {
 export const getBooks = createAsyncThunk(
   GET_BOOKS, () => axios.get(apiUrl).then((res) => {
     const books = res.data;
+    const progress = Math.floor(Math.random() * 100);
+    const currentStatus = Math.floor(Math.random() * 10);
     const data = Object.keys(books).map((id) => ({
       id,
       title: books[id][0].title,
       author: books[id][0].author,
       category: books[id][0].category,
+      progress: `${progress}%`,
+      currentStatus: `${currentStatus}`,
     }));
     return data;
   }),
