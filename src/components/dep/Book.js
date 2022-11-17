@@ -9,25 +9,31 @@ const Book = ({
   <ul className="new-book-entry-ul">
     <li className="new-book-entry">
       <section>
-        <h4>{genre}</h4>
-        <h2>{title}</h2>
-        <h5>{author}</h5>
+        <h4 className="genre-text">{genre}</h4>
+        <h2 className="title-text">{title}</h2>
+        <h5 className="author-text">{author}</h5>
         <div className="book-buttons-div">
-          <button type="button">Comments</button>
+          <button className="comment-edit-remove-btn" type="button">Comments</button>
           <RemoveBook id={id} />
-          <button type="button">Edit</button>
+          <button className="comment-edit-remove-btn" type="button">Edit</button>
         </div>
       </section>
       <section>
-        <h5>Progress</h5>
-        <h4>{progress}</h4>
+        <h5 className="for-phone">Progress</h5>
+        <span className="progress-percentage-div">
+          <h4 className="progress-percentage">{progress}</h4>
+          <h6 className="progress-percentage-text">Completed</h6>
+        </span>
       </section>
-      <section>
-        <h5>Current Chapter</h5>
-        <h4>
-          Chapter
-          {currentStatus}
-        </h4>
+      <section className="current-chapter-section">
+        <span>
+          <h5 className="current-chap-text">Current Chapter</h5>
+          <h4 className="current-chap-text">
+            Chapter
+            {currentStatus}
+          </h4>
+        </span>
+        <button type="button">Update Status</button>
       </section>
     </li>
   </ul>
