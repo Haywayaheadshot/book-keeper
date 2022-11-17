@@ -21,18 +21,25 @@ function AddNewBook() {
   const onChangeGenreHandler = ({ target }) => setGenre(target.value);
 
   const onClickInput = () => {
-    dispatch(addBook({
-      id, title, genre, author, progress: `${progress}%`, currentStatus: `${currentStatus}`,
-    }));
-    setAuthor('');
-    setTitle('');
-    setGenre('');
+    const errorMessage = document.querySelector('.error-message');
+    if ((title) && (author) && (genre)) {
+      errorMessage.style.display = 'none';
+      dispatch(addBook({
+        id, title, genre, author, progress: `${progress}%`, currentStatus: `${currentStatus}`,
+      }));
+      setAuthor('');
+      setTitle('');
+      setGenre('"Genre Not Specified"');
+    } else {
+      errorMessage.style.display = 'block';
+    }
   };
 
   return (
     <div>
       <section className="books-authors-inputs-div">
         <h2>Add New Book</h2>
+        <p className="error-message">Please fill in Author, Title and Genre sections</p>
         <form className="books-authors-inputs">
           <input
             placeholder="Book Title"
@@ -50,14 +57,14 @@ function AddNewBook() {
             onChange={onChangeAuthorHandler}
             required
           />
-          <input
-            placeholder="Genre"
-            className="user-inputs"
-            type="text"
-            value={genre}
-            onChange={onChangeGenreHandler}
-            required
-          />
+          <select className="user-inputs" name={genre} onChange={onChangeGenreHandler} required>
+            <option value="" hidden>Choose Genre</option>
+            <option value="Action">Action</option>
+            <option value="Suspense">Suspense</option>
+            <option value="Romance">Romance</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Thriller">Thriller</option>
+          </select>
           <button className="add-books" type="button" onClick={onClickInput}>Add Book</button>
         </form>
       </section>
