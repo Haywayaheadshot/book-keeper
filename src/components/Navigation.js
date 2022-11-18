@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Hamburger from 'hamburger-react';
 import '../styles/navigation.css';
+import userDp from './images/user-dp.jpg';
 
 function Navigation() {
   const [isOpen, isClosed] = useState(false);
@@ -28,7 +29,7 @@ function Navigation() {
         </ul>
       </section>
       <section className="dp-hamgurger">
-        <img src="" alt="User DP" />
+        <img className="user-dp" src={userDp} alt="User DP" />
         <div className="for-phone">
           <Hamburger
             color="#0290ff"
