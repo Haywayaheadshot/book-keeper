@@ -25,7 +25,7 @@ function AddNewBook() {
     if ((title) && (author) && (genre)) {
       errorMessage.style.display = 'none';
       dispatch(addBook({
-        id, title, genre, author, progress: `${progress}%`, currentStatus: `${currentStatus}`,
+        id, title, genre, author, progress: `${progress}`, currentStatus: `${currentStatus}`,
       }));
       setAuthor('');
       setTitle('');
