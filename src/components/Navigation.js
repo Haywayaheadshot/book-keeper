@@ -31,7 +31,7 @@ function Navigation() {
         <img src="" alt="User DP" />
         <div className="for-phone">
           <Hamburger
-            color="blue"
+            color="#0290ff"
             toggled={isOpen}
             toggle={isClosed}
             duration={0.8}
