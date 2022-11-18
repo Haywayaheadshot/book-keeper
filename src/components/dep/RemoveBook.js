@@ -8,7 +8,7 @@ const RemoveBook = (id) => {
   const convertedId = index.id;
   const onClickRemove = () => {
     dispatch(removeBook(convertedId));
-    setTimeout(() => dispatch(getBooks()), 100);
+    setTimeout(() => dispatch(getBooks()), 1000);
   };
   return (
     <button className="comment-edit-remove-btn" type="button" onClick={onClickRemove} id={convertedId}>

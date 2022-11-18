@@ -30,7 +30,7 @@ function AddNewBook() {
       setAuthor('');
       setTitle('');
       setGenre('');
-      setTimeout(() => dispatch(getBooks()), 100);
+      setTimeout(() => dispatch(getBooks()), 1000);
     } else {
       errorMessage.style.display = 'block';
     }
