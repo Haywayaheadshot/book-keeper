@@ -14,7 +14,7 @@ function Categories() {
 
   return (
     <div className="categories-container">
-      <button className="categories-btn" type="button" onClick={onClickStatus}>Check Satus</button>
+      <button className="categories-btn robotoslab-fam" type="button" onClick={onClickStatus}>Check Satus</button>
       <h4>{categories}</h4>
     </div>
   );
