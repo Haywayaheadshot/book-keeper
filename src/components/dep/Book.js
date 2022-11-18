@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/book.css';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import RemoveBook from './RemoveBook';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = ({
   id, title, author, progress, genre, currentStatus,
@@ -18,10 +20,14 @@ const Book = ({
           <button className="comment-edit-remove-btn" type="button">Edit</button>
         </div>
       </section>
-      <section>
+      <section className="progress-section">
         <h5 className="for-phone">Progress</h5>
+        <CircularProgressbar className="progress-bar" value={progress} text={`${progress}%`} />
         <span className="progress-percentage-div">
-          <h4 className="progress-percentage">{progress}</h4>
+          <h4 className="progress-percentage">
+            {progress}
+            %
+          </h4>
           <h6 className="progress-percentage-text">Completed</h6>
         </span>
       </section>
@@ -33,7 +39,7 @@ const Book = ({
             {currentStatus}
           </h4>
         </span>
-        <button type="button">Update Status</button>
+        <button className="update-status-button" type="button">UPDATE STATUS</button>
       </section>
     </li>
   </ul>
