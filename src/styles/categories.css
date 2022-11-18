@@ -7,3 +7,27 @@
 .btn-off {
   display: none;
 }
+
+.categories-btn {
+  background-color: blue;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 1vh 1vw;
+  max-width: 15vw;
+  place-self: center;
+  cursor: pointer;
+}
+
+.categories-btn:hover {
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  color: blue;
+}
+
+.categories-btn:active {
+  background-color: orange;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px blue;
+  color: #fff;
+}
