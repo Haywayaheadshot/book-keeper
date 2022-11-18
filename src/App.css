@@ -2,6 +2,25 @@
   padding: 2vh 5vw;
 }
 
+.container {
+  background-color: rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+}
+
+.montserrat-fam {
+  font-family: 'Montserrat', sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.robotoslab-fam {
+  font-family: 'Roboto Slab', serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
 @media (min-width: 760px) {
   .App {
     padding: 2vh 0;

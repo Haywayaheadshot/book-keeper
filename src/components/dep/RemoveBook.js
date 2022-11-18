@@ -11,7 +11,7 @@ const RemoveBook = (id) => {
     setTimeout(() => dispatch(getBooks()), 1000);
   };
   return (
-    <button className="comment-edit-remove-btn" type="button" onClick={onClickRemove} id={convertedId}>
+    <button className="comment-edit-remove-btn robotoslab-fam" type="button" onClick={onClickRemove} id={convertedId}>
       Remove
     </button>
   );

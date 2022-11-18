@@ -25,7 +25,7 @@ function AddNewBook() {
     if ((title) && (author) && (genre)) {
       errorMessage.style.display = 'none';
       dispatch(addBook({
-        id, title, genre, author, progress: `${progress}%`, currentStatus: `${currentStatus}`,
+        id, title, genre, author, progress: `${progress}`, currentStatus: `${currentStatus}`,
       }));
       setAuthor('');
       setTitle('');
@@ -37,7 +37,7 @@ function AddNewBook() {
   };
 
   return (
-    <div>
+    <>
       <section className="books-authors-inputs-div">
         <p className="error-message">Please fill in Author, Title and Genre sections</p>
         <h2>Add New Book</h2>
@@ -73,7 +73,7 @@ function AddNewBook() {
           </button>
         </form>
       </section>
-    </div>
+    </>
   );
 }
 

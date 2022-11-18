@@ -1,16 +1,52 @@
 .new-book-entry-ul {
   display: grid;
   list-style: none;
-  padding: 2vw;
+  padding: 0 2vw;
 }
 
 .new-book-entry {
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.154);
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   padding: 3vh 5vw;
   gap: 5px;
-  border-radius: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-status-button {
+  background-color: blue;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.update-status-button:hover {
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  color: blue;
+}
+
+.update-status-button:active {
+  background-color: orange;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px blue;
+  color: #fff;
+}
+
+.progress-bar {
+  max-height: 8vh;
 }
 
 .comment-edit-remove-btn {
@@ -18,11 +54,13 @@
   background: none;
   border-right: 1px solid #e8e8e8;
   color: #4386bf;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
 .genre-text {
   font-size: 0.857rem;
-  color: #121212;
+  color: #12121297;
   font-weight: bold;
 }
 
@@ -38,13 +76,18 @@
 }
 
 .progress-percentage {
-  margin: 2vh 0 0 0;
+  margin: 0;
   padding: 0;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 .progress-percentage-text {
   margin: 0;
   padding: 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #12121297;
 }
 
 .current-chapter-section {
@@ -58,13 +101,13 @@
   .new-book-entry-ul {
     display: grid;
     list-style: none;
-    padding: 0 2vw;
+    place-content: center;
   }
 
   .new-book-entry {
-    border: 1px solid #000;
-    padding: 3vh 5vw;
-    grid-template-columns: 3fr 1fr 1fr;
+    padding: 3vh 9vw 0 2vw;
+    grid-template-columns: 2fr 1fr 1fr;
+    min-width: 75vw;
   }
 
   .current-chapter-section {
@@ -72,14 +115,61 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
   }
 
   .current-chap-text {
     margin: 2vh 0 0 0;
     padding: 0;
+    color: #12121297;
+    font-size: 0.813rem;
+    font-weight: 300;
+  }
+
+  .current-chap-text:nth-child(2) {
+    color: #121212e8;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .progress-section {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid #e8e8e8;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    place-self: center;
+    padding-right: 5vw;
   }
 
   .progress-percentage-div {
-    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .progress-bar {
+    max-height: 8vh;
+    max-width: 4vw;
+    padding-right: 1vw;
+  }
+
+  .title-text {
+    margin: 0;
+    font-size: 1.375rem;
+    font-weight: bold;
+  }
+
+  .genre-text {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+
+  .author-text {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 0.875rem;
   }
 }

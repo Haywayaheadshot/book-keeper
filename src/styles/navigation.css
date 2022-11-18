@@ -9,6 +9,11 @@ a {
   text-decoration: none;
 }
 
+.user-dp {
+  max-width: 10vw;
+  border-radius: 50%;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -65,10 +70,26 @@ a:active {
 
   .desk-li {
     color: #000;
+    cursor: pointer;
+  }
+
+  .desk-li:hover {
+    color: blue;
+  }
+
+  .desk-li:active {
+    background-color: orange;
+    border: 1px solid #000;
+    box-shadow: 0 0 3px blue;
+    color: #fff;
   }
 
   .for-desk {
     display: block;
+  }
+
+  .user-dp {
+    max-width: 4vw;
   }
 
   .nav-popUp-ul {

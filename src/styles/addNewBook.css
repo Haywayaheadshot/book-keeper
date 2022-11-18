@@ -17,8 +17,27 @@
 }
 
 .add-books {
+  background-color: blue;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 1vh 1vw;
   max-width: 15vw;
   place-self: center;
+  cursor: pointer;
+}
+
+.add-books:hover {
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  color: blue;
+}
+
+.add-books:active {
+  background-color: orange;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px blue;
+  color: #fff;
 }
 
 .books-authors-inputs-div {
@@ -37,6 +56,7 @@
   .books-authors-inputs-div {
     border-top: 2px solid grey;
     margin-top: 10vh;
+    max-width: 100vw;
   }
 
   .books-authors-inputs {
