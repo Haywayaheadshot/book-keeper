@@ -10,7 +10,41 @@
   grid-template-columns: 1.5fr 1fr 1fr;
   padding: 3vh 5vw;
   gap: 5px;
-  border-radius: 12px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.update-status-button {
+  background-color: blue;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  padding: 1vh 1vw;
+  cursor: pointer;
+}
+
+.update-status-button:hover {
+  background-color: #fff;
+  box-shadow: 0 0 3px #000;
+  color: blue;
+}
+
+.update-status-button:active {
+  background-color: orange;
+  border: 1px solid #000;
+  box-shadow: 0 0 3px blue;
+  color: #fff;
+}
+
+.progress-bar {
+  max-height: 8vh;
 }
 
 .comment-edit-remove-btn {
@@ -22,7 +56,7 @@
 
 .genre-text {
   font-size: 0.857rem;
-  color: #121212;
+  color: #12121297;
   font-weight: bold;
 }
 
@@ -38,7 +72,7 @@
 }
 
 .progress-percentage {
-  margin: 2vh 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -64,7 +98,7 @@
   .new-book-entry {
     border: 1px solid #000;
     padding: 3vh 5vw;
-    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .current-chapter-section {
@@ -72,14 +106,48 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 40px;
   }
 
   .current-chap-text {
     margin: 2vh 0 0 0;
     padding: 0;
+    color: #12121297;
+  }
+
+  .current-chap-text:nth-child(2) {
+    color: #121212e8;
+  }
+
+  .progress-section {
+    display: flex;
+    flex-direction: row;
+    border-right: 1px solid #e8e8e8;
+    align-items: center;
+    justify-content: center;
   }
 
   .progress-percentage-div {
-    border-right: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .progress-bar {
+    max-height: 8vh;
+    max-width: 4vw;
+    padding-right: 1vw;
+  }
+
+  .title-text {
+    margin: 0;
+  }
+
+  .genre-text {
+    margin-bottom: 0;
+  }
+
+  .author-text {
+    margin-top: 0;
   }
 }
