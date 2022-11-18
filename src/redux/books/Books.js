@@ -36,7 +36,7 @@ export const getBooks = createAsyncThunk(
       title: books[id][0].title,
       author: books[id][0].author,
       category: books[id][0].category,
-      progress: `${progress}%`,
+      progress: `${progress}`,
       currentStatus: `${currentStatus}`,
     }));
     return data;
