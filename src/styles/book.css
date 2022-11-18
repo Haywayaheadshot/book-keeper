@@ -1,11 +1,11 @@
 .new-book-entry-ul {
   display: grid;
   list-style: none;
-  padding: 2vw;
+  padding: 0 2vw;
 }
 
 .new-book-entry {
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.154);
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   padding: 3vh 5vw;
@@ -28,6 +28,8 @@
   border: none;
   padding: 1vh 1vw;
   cursor: pointer;
+  font-size: 0.813rem;
+  font-weight: 300;
 }
 
 .update-status-button:hover {
@@ -52,6 +54,8 @@
   background: none;
   border-right: 1px solid #e8e8e8;
   color: #4386bf;
+  font-weight: 300;
+  font-size: 0.875rem;
 }
 
 .genre-text {
@@ -74,11 +78,16 @@
 .progress-percentage {
   margin: 0;
   padding: 0;
+  font-size: 2rem;
+  font-weight: normal;
 }
 
 .progress-percentage-text {
   margin: 0;
   padding: 0;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: #12121297;
 }
 
 .current-chapter-section {
@@ -92,13 +101,13 @@
   .new-book-entry-ul {
     display: grid;
     list-style: none;
-    padding: 0 2vw;
+    place-content: center;
   }
 
   .new-book-entry {
-    border: 1px solid #000;
-    padding: 3vh 5vw;
+    padding: 3vh 9vw 0 2vw;
     grid-template-columns: 2fr 1fr 1fr;
+    min-width: 75vw;
   }
 
   .current-chapter-section {
@@ -113,10 +122,14 @@
     margin: 2vh 0 0 0;
     padding: 0;
     color: #12121297;
+    font-size: 0.813rem;
+    font-weight: 300;
   }
 
   .current-chap-text:nth-child(2) {
     color: #121212e8;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .progress-section {
@@ -125,6 +138,9 @@
     border-right: 1px solid #e8e8e8;
     align-items: center;
     justify-content: center;
+    height: 60px;
+    place-self: center;
+    padding-right: 5vw;
   }
 
   .progress-percentage-div {
@@ -141,13 +157,19 @@
 
   .title-text {
     margin: 0;
+    font-size: 1.375rem;
+    font-weight: bold;
   }
 
   .genre-text {
     margin-bottom: 0;
+    font-weight: bold;
+    font-size: 0.875rem;
   }
 
   .author-text {
     margin-top: 0;
+    font-weight: 300;
+    font-size: 0.875rem;
   }
 }
