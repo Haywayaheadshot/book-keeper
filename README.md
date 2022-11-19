@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Live Demo
 
-To see live demo, click [here](https://app.netlify.com/sites/magenta-beignet-80327c/overview)
+To see live demo, click [here](https://magenta-beignet-80327c.netlify.app/)
 
 ### Setup
 - To clone the repository run this command - " git clone https://github.com/Haywayaheadshot/book-keeper.git "
